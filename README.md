@@ -4,6 +4,10 @@ Free frameworks and libraries for programmatic video, motion graphics, audio and
 
 ## Setup
 
+**Windows (PowerShell):** run `powershell -ExecutionPolicy Bypass -File scripts\setup-windows.ps1` from the repo folder, then use `.\.venv\Scripts\python.exe -m studio <command>`. The Linux/Mac steps below do not work in PowerShell. Untested on a real Windows machine.
+
+**Linux / Mac:**
+
 ```bash
 sudo scripts/install-system.sh          # ffmpeg, ImageMagick, GStreamer, Blender, Synfig, OpenToonz
 npm install && npm run setup:browsers   # Remotion, Three.js, Framer Motion, Lottie, Playwright
