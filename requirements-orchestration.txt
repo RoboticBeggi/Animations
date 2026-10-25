@@ -1,0 +1,5 @@
+# Distributed rendering and workflow orchestration
+ray[default]
+prefect
+# Airflow should be installed with its constraints file; see README.
+# apache-airflow

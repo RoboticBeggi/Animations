@@ -1,0 +1,13 @@
+# Core creative stack (CPU-friendly)
+manim
+librosa
+pydub
+moviepy
+opencv-python
+rembg
+taichi
+mediapipe
+requests
+openai-whisper
+elevenlabs
+python-dotenv

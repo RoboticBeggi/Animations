@@ -1,0 +1,11 @@
+# GPU / heavy ML stack. Install the right torch build for your CUDA first:
+#   https://pytorch.org/get-started/locally/
+-r requirements.txt
+torch
+torchvision
+torchaudio
+demucs
+diffusers
+transformers
+accelerate
+torch-geometric

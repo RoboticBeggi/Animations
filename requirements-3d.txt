@@ -1,0 +1,2 @@
+# Blender as a Python module (large download, Python version-pinned)
+bpy

@@ -1,0 +1,23 @@
+{
+  "name": "animations-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Creative studio stack: programmatic video, 3D, motion and browser-based capture",
+  "scripts": {
+    "remotion:studio": "remotion studio",
+    "remotion:render": "remotion render",
+    "setup:browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "framer-motion": "^11.0.0",
+    "lottie-web": "^5.12.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}
