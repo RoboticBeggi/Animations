@@ -57,7 +57,12 @@ studio montage audio.wav final.mp4 clips/*.mp4 --captions caps.ass
 
 Tests: `python -m unittest discover tests` (the e2e test needs ffmpeg + librosa and skips otherwise).
 
-**Verification status:** captions and cut planning are unit-tested, and the beat-montage path (ffmpeg, Librosa, ASS burn-in) passes an end-to-end run on synthetic media. Whisper, Demucs, ElevenLabs, ComfyUI, Playwright capture, Blender and Remotion code was written to each tool's documented API but has **not** been run in this environment (no GPU, keys or installs).
+**Verification status** (checked on Linux, Python 3.13, CPU only):
+- Ran real jobs: beat montage with burned captions, Remotion render, Blender headless render of `scripts/blender_scene.py`, Manim render, Whisper `tiny` model load, Rembg model load, Taichi kernel.
+- Installed and import OK, not exercised: Demucs, Diffusers, PyTorch Geometric, MediaPipe, Ray, Prefect, Airflow, ElevenLabs client.
+- Not run: ComfyUI workflows, LivePortrait, Playwright frame capture, ElevenLabs (needs key), Docker image (no daemon here).
+- `bpy` pip module fails to load on this Linux box (library mismatch); use the system `blender` binary instead. OpenToonz has no apt package.
+- Never tested on Windows.
 
 ## Catalog
 
