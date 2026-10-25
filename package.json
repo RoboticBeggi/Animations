@@ -4,8 +4,8 @@
   "private": true,
   "description": "Creative studio stack: programmatic video, 3D, motion and browser-based capture",
   "scripts": {
-    "remotion:studio": "remotion studio",
-    "remotion:render": "remotion render",
+    "remotion:studio": "remotion studio remotion/src/index.ts",
+    "remotion:render": "remotion render remotion/src/index.ts KineticCaptions out/captions.mp4",
     "setup:browsers": "playwright install chromium"
   },
   "dependencies": {
